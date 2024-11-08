@@ -1,0 +1,79 @@
+---
+title: "What is Agentic RAG"
+date: "2024-02-15"
+tags: ["ai", "rag", "agents", "llm"]
+description: "Explore how Agentic RAG enhances traditional RAG pipelines with AI agents, enabling more powerful and versatile LLM-powered applications."
+---
+
+# What is Agentic RAG
+
+While Retrieval-Augmented Generation (RAG) dominated 2023, agentic workflows are driving massive progress in 2024. The usage of AI agents opens up new possibilities for building more powerful, robust, and versatile Large Language Model(LLM)-powered applications. One possibility is enhancing RAG pipelines with AI agents in agentic RAG pipelines.
+
+## Fundamentals of Agentic RAG
+
+### What is Retrieval-Augmented Generation (RAG)
+
+[Retrieval-Augmented Generation (RAG)] is a technique for building LLM-powered applications. It leverages an external knowledge source to provide the LLM with relevant context and reduce hallucinations.
+
+A naive RAG pipeline consists of a retrieval component (typically composed of an embedding model and a vector database) and a generative component (an LLM). At inference time, the user query is used to run a similarity search over the indexed documents to retrieve the most similar documents to the query and provide the LLM with additional context.
+
+Typical RAG applications have two considerable limitations:
+1. The naive RAG pipeline only considers one external knowledge source. However, some solutions might require two external knowledge sources, and some solutions might require external tools and APIs, such as web searches.
+2. They are a one-shot solution, which means that context is retrieved once. There is no reasoning or validation over the quality of the retrieved context.
+
+### What are Agents in AI Systems
+
+With the popularity of LLMs, new paradigms of AI agents and multi-agent systems have emerged. AI agents are LLMs with a role and task that have access to memory and external tools. The reasoning capabilities of LLMs help the agent plan the required steps and take action to complete the task at hand.
+
+The core components of an AI agent are:
+- LLM (with a role and a task)
+- Memory (short-term and long-term)
+- Planning (e.g., reflection, self-critics, query routing, etc.)
+- Tools (e.g., calculator, web search, etc.)
+
+## What is Agentic RAG?
+
+Agentic RAG describes an AI agent-based implementation of RAG. Specifically, it incorporates AI agents into the RAG pipeline to orchestrate its components and perform additional actions beyond simple information retrieval and generation to overcome the limitations of the non-agentic pipeline.
+
+### How does Agentic RAG work?
+
+Although agents can be incorporated in different stages of the RAG pipeline, agentic RAG most commonly refers to the use of agents in the retrieval component.
+
+The retrieval component becomes agentic through the use of retrieval agents with access to different retriever tools, such as:
+- Vector search engine
+- Web search
+- Calculator
+- Any API to access software programmatically
+- And many more
+
+### Agentic RAG Architecture
+
+In contrast to the sequential naive RAG architecture, the core of the agentic RAG architecture is the agent. Agentic RAG architectures can have various levels of complexity:
+
+1. **Single-Agent RAG (Router)**
+   - Simple routing between multiple knowledge sources
+   - Access to various tools and APIs
+   - One agent handling reasoning, retrieval, and generation
+
+2. **Multi-agent RAG Systems**
+   - Multiple specialized retrieval agents
+   - Coordinated by a master agent
+   - Different agents for different data sources
+
+## Benefits and Limitations
+
+### Benefits
+- Improved quality of retrieved information
+- Access to multiple knowledge sources
+- Validation of retrieved context
+- More robust and accurate responses
+
+### Limitations
+- Added latency from LLM usage
+- Potential reliability issues
+- Need for proper failure handling
+- Complexity in implementation
+
+## Conclusion
+
+Agentic RAG represents a significant evolution in how we build LLM-powered applications. By combining the power of RAG with AI agents, we can create more sophisticated and capable systems that better serve user needs. 
