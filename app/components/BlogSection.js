@@ -10,7 +10,7 @@ const BlogSection = () => {
   );
 
   return (
-    <div className="px-8 pb-12">
+    <div id="writings">
       <div>
         <p className="font-bold">Writings</p>
       </div>

@@ -37,7 +37,11 @@ const Home = () => {
               <span className="text-foreground font-mono font-semibold">
                 no-code tools
               </span>{" "}
-              and putting them out for public use. Check them out in the projects section.
+              and putting them out for public use. Check them out in the{" "}
+              <a href="#projects" className="text-foreground font-mono font-semibold">
+                Projects section
+              </a>
+              .
             </p>
             <p>
               Currently building two{" "}
@@ -54,6 +58,14 @@ const Home = () => {
               </span>
               .
             </p>
+            <p>
+              I also write about my learnings and experiences. Check them out in the{" "}
+              <a href="#writings" className="text-foreground font-mono font-semibold">
+                Writings section
+              </a>
+              .
+            </p>
+            <p>Currently saving up to buy a <span className="text-foreground font-mono font-semibold">Mac Mini M4</span></p>
           </div>
           <div className="pt-3 flex gap-4">
             <Button
