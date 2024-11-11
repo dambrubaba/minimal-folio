@@ -6,6 +6,22 @@ import { Analytics } from "@vercel/analytics/react";
 export const metadata = {
   title: "Damburudhar",
   description: "Damburudhar Portfolio Website",
+  icons: {
+    icon: [
+      {
+        url: '/favicon.ico',
+        sizes: 'any',
+      },
+      {
+        url: '/icon.svg',
+        type: 'image/svg+xml',
+      },
+    ],
+    apple: {
+      url: '/apple-touch-icon.png',
+      sizes: '180x180',
+    },
+  },
 };
 
 export default function RootLayout({ children }) {
