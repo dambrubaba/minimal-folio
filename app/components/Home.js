@@ -22,11 +22,18 @@ const Home = () => {
     <div>
       <div className="px-8 pb-12 h-full flex flex-col">
         <div>
-          <div>
+          <div className="flex items-center gap-3">
             <p className="font-bold">Damburudhar</p>
-            <p className="opacity-70">Full-stack Developer</p>
-            <p className="opacity-70">India</p>
+            <div className="flex items-center gap-2 bg-green-500/10 px-2 py-0.5 rounded-full">
+              <div className="relative">
+                <div className="w-2.5 h-2.5 rounded-full bg-green-500"></div>
+                <div className="w-2.5 h-2.5 rounded-full bg-green-500 absolute inset-0 animate-ping opacity-75"></div>
+              </div>
+              <span className="text-xs font-medium text-green-600 dark:text-green-400">online</span>
+            </div>
           </div>
+          <p className="opacity-70">Full-stack Developer</p>
+          <p className="opacity-70">India</p>
         </div>
         <div className="pt-12 w-5/6">
           <p className="font-bold">Building Useful Apps with Modern Tools</p>
