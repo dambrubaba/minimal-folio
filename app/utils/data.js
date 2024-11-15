@@ -1,5 +1,13 @@
 export const BlogCardData = [
   {
+    title: "Apps Developed Using Llama & Together AI",
+    description: "Explore a collection of applications built using Llama and Together AI, showcasing different capabilities from utility tools to productivity applications.",
+    date: "2024-02-20",
+    tags: ["ai", "development", "llama", "together-ai"],
+    slug: "apps-with-llama-and-together",
+    readTime: "5 min read"
+  },
+  {
     date: "2024-02-15",
     id: "what-is-agentic-rag",
     publishedAt: "2024-02-15T00:00:00.000Z",

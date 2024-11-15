@@ -72,7 +72,9 @@ const Home = () => {
               </a>
               .
             </p>
-            <p>Currently saving up to buy a <span className="text-foreground font-mono font-semibold">Mac Mini M4</span></p>
+            <p>
+              Currently saving up to buy a <span className="text-foreground font-mono font-semibold">Mac Mini M4</span>.
+            </p>
           </div>
           <div className="pt-3 flex gap-4">
             <Button
