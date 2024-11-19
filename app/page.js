@@ -1,7 +1,10 @@
+import { Suspense } from "react";
 import Home from "./components/Home";
 import About from "./components/About";
 import ProjectSection from "./components/ProjectSection";
 import BlogSection from "./components/BlogSection";
+import ToolsSection from "./components/ToolsSection";
+import TabNavigation from "./components/TabNavigation";
 
 export const metadata = {
   title: 'Damburudhar - portfolio',
@@ -34,8 +37,9 @@ export default function HomePage() {
     <div>
       <Home />
       <About />
-      <ProjectSection />
-      <BlogSection />
+      <Suspense fallback={<div>Loading...</div>}>
+        <TabNavigation />
+      </Suspense>
     </div>
   );
 }

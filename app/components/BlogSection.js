@@ -10,9 +10,9 @@ const BlogSection = () => {
   );
 
   return (
-    <div id="writings">
+    <div className="max-w-2xl mx-auto">
       <div>
-        <p className="font-bold">Writings</p>
+        <p className="font-bold">I write about things I learn</p>
       </div>
       <div className="py-3">
         {sortedBlogCardData.map((item, index) => {
