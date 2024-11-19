@@ -4,13 +4,13 @@ import ProjectSection from "./components/ProjectSection";
 import BlogSection from "./components/BlogSection";
 
 export const metadata = {
-  title: 'My Awesome Website',
-  description: 'Welcome to my website where I share awesome content',
+  title: 'Damburudhar - portfolio',
+  description: 'Building free tools for the internet',
   openGraph: {
-    title: 'My Awesome Website',
-    description: 'Welcome to my website where I share awesome content',
+    title: 'Damburudhar - portfolio',
+    description: 'Building free tools for the internet',
     url: 'https://damburudhar.vercel.app',
-    siteName: 'My Awesome Website',
+    siteName: 'Damburudhar - portfolio',
     images: [
       {
         url: '/og-default.png',
@@ -23,8 +23,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'My Awesome Website',
-    description: 'Welcome to my website where I share awesome content',
+    title: 'Damburudhar - portfolio',
+    description: 'Building free tools for the internet',
     images: ['/og-default.png'],
   },
 };
