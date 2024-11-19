@@ -4,12 +4,21 @@ const ToolsSection = () => {
       category: "Development",
       items: [
         { name: "VS Code", description: "Primary code editor", url: "https://code.visualstudio.com/" },
+        { name: "Cursor", description: "AI code editor", url: "https://www.cursor.com/" },
+        { name: "Vercel", description: "Web development platform", url: "https://vercel.com/" },
+        { name: "Bolt.new", description: "AI code editor", url: "https://bolt.new/" },
+        { name: "Clerk", description: "Authentication platform", url: "https://clerk.com/" },
+        { name: "Convex", description: "Backend development platform", url: "https://www.convex.dev/" },
+        { name: "Neon", description: "Database platform", url: "https://neon.tech/" },
+        { name: "Supabase", description: "Database platform", url: "https://supabase.com/" },
+        { name: "Firebase", description: "Backend development platform", url: "https://firebase.google.com/" },
+        { name: "Auth-secret", description: "64-bit secret key generator", url: "https://generate-secret.vercel.app/" },
+        { name: "Tavily", description: "AI search", url: "https://tavily.com/" },
+        { name: "Expo", description: "App development platform", url: "https://expo.dev/" },
         { name: "OneCompiler", description: "Online code editor", url: "https://onecompiler.com/html" },
         { name: "Webflow", description: "Visual development platform", url: "https://webflow.com" },
         { name: "JSON Editor", description: "JSON data formatter", url: "https://jsoneditoronline.org" },
-        { name: "E2B", description: "AI development tools", url: "https://artifacts.e2b.dev/" },
         { name: "v0.dev", description: "UI prototyping", url: "https://v0.dev" },
-        { name: "Glitch", description: "Web development platform", url: "https://glitch.com" },
         { name: "GitHub", description: "Code repository", url: "https://github.com/" },
         { name: "OpenAI", description: "AI development platform", url: "https://platform.openai.com/docs/overview" },
         { name: "Next.js", description: "React framework", url: "https://nextjs.org" },
@@ -23,6 +32,8 @@ const ToolsSection = () => {
         { name: "Claude", description: "AI writing", url: "https://claude.ai" },
         { name: "Gemini", description: "AI chat", url: "https://gemini.google.com" },
         { name: "Gemini Pro", description: "AI experiments", url: "https://aistudio.google.com/app/prompts/new_chat" },
+        { name: "NotebookLM", description: "AI writing", url: "https://notebooklm.com/" },
+        { name: "Ragflow", description: "AI search", url: "https://ragflow.com/" },
         { name: "Khoj", description: "AI search", url: "https://app.khoj.dev" },
         { name: "NotDiamond", description: "AI chat", url: "https://chat.notdiamond.ai/" },
         { name: "Rytr", description: "Content writing", url: "https://rytr.me/" },
@@ -54,9 +65,9 @@ const ToolsSection = () => {
         { name: "TempMail", description: "Disposable email", url: "https://temp-mail.org" },
         { name: "Internxt Mail", description: "Temporary email", url: "https://internxt.com/temporary-email" },
         { name: "Receive SMS", description: "Temporary phone numbers", url: "https://receive-smss.com" },
+        { name: "llamaocr", description: "OCR tool", url: "https://llamaocr.com" },
         { name: "SyntaxCV", description: "Resume builder", url: "https://syntaxcv.com" },
         { name: "Datastax", description: "Database platform", url: "https://accounts.datastax.com" },
-        { name: "OPSTRA", description: "Options strategy", url: "https://opstra.definedge.com" }
       ]
     },
     {
@@ -65,8 +76,6 @@ const ToolsSection = () => {
         { name: "X (Twitter)", description: "Social media", url: "https://x.com" },
         { name: "Reddit", description: "Social platform", url: "https://www.reddit.com" },
         { name: "Vectorshift", description: "AI chatbot builder", url: "https://app.vectorshift.ai" },
-        { name: "IGNOU", description: "Education portal", url: "https://admission.ignou.ac.in" },
-        { name: "AstroNidan", description: "Astrology tools", url: "https://web.astronidan.com" },
         { name: "YouTube", description: "Video platform", url: "https://www.youtube.com/" }
       ]
     }
