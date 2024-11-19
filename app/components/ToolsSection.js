@@ -82,33 +82,34 @@ const ToolsSection = () => {
   ];
 
   return (
-    <div className="max-w-2xl mx-auto space-y-8">
+    <div className="w-full max-w-2xl mx-auto px-4 sm:px-6 space-y-8">
       {tools.map((section) => (
         <div key={section.category} className="space-y-4">
-          <h3 className="font-medium text-black dark:text-zinc-100">
+          <h3 className="font-medium text-black dark:text-zinc-100 text-lg sm:text-xl">
             {section.category}
           </h3>
-          <div className="bg-zinc-100 dark:bg-zinc-800 rounded-lg overflow-hidden">
-            <table className="w-full">
+          <div className="bg-zinc-100 dark:bg-zinc-800 rounded-lg overflow-hidden overflow-x-auto">
+            <table className="w-full min-w-full table-auto">
               <tbody>
                 {section.items.map((tool, index) => (
                   <tr 
                     key={tool.name}
                     className={`
                       ${index !== section.items.length - 1 ? 'border-b border-zinc-200 dark:border-zinc-700' : ''}
+                      hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors
                     `}
                   >
-                    <td className="py-2 px-4 w-1/2">
+                    <td className="py-3 px-4 sm:px-6 w-1/3 sm:w-1/2">
                       <a 
                         href={tool.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-black dark:text-zinc-100 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
+                        className="text-sm sm:text-base text-black dark:text-zinc-100 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
                       >
                         {tool.name}
                       </a>
                     </td>
-                    <td className="py-2 px-4 text-zinc-600 dark:text-zinc-400">
+                    <td className="py-3 px-4 sm:px-6 text-xs sm:text-sm text-zinc-600 dark:text-zinc-400">
                       {tool.description}
                     </td>
                   </tr>

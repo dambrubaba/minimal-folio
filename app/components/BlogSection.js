@@ -10,13 +10,19 @@ const BlogSection = () => {
   );
 
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="w-full max-w-2xl mx-auto px-4 sm:px-6">
       <div>
-        <p className="font-bold">I write about things I learn</p>
+        <p className="font-bold text-lg sm:text-xl mb-2">
+          I write about things I learn
+        </p>
       </div>
-      <div className="py-3">
+      <div className="py-3 space-y-4 sm:space-y-6">
         {sortedBlogCardData.map((item, index) => {
-          return <BlogCard key={item?.id} item={item} index={index} />;
+          return (
+            <div key={item?.id} className="w-full">
+              <BlogCard item={item} index={index} />
+            </div>
+          );
         })}
       </div>
     </div>
