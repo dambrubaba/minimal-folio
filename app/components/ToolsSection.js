@@ -78,6 +78,26 @@ const ToolsSection = () => {
         { name: "Vectorshift", description: "AI chatbot builder", url: "https://app.vectorshift.ai" },
         { name: "YouTube", description: "Video platform", url: "https://www.youtube.com/" }
       ]
+    },
+    {
+      category: "Together AI Projects",
+      items: [
+        { name: "PicMenu", description: "Code", url: "https://www.picmenu.co/", codeUrl: "https://github.com/Nutlope/picMenu" },
+        { name: "Llama-OCR", description: "Code", url: "https://llamaocr.com/", codeUrl: "https://github.com/Nutlope/llama-ocr" },
+        { name: "LogoCreator", description: "Code", url: "https://www.logo-creator.io/", codeUrl: "https://github.com/Nutlope/logocreator" },
+        { name: "Agent Recipes", description: "Code", url: "https://www.agentrecipes.com/", codeUrl: "https://www.agentrecipes.com/" },
+        { name: "Code Arena", description: "Code", url: "https://www.llmcodearena.com/", codeUrl: "https://github.com/Nutlope/codearena" },
+        { name: "LlamaCoder", description: "Code", url: "https://llamacoder.together.ai/", codeUrl: "https://github.com/nutlope/llamacoder" },
+        { name: "BlinkShot", description: "Code", url: "https://www.blinkshot.io/", codeUrl: "https://github.com/Nutlope/blinkshot" },
+        { name: "Product Description", description: "Code", url: "https://product-descriptions.vercel.app/", codeUrl: "https://github.com/Nutlope/description-generator" },
+        { name: "TurboSeek", description: "Code", url: "https://www.turboseek.io/", codeUrl: "https://github.com/Nutlope/turboseek" },
+        { name: "LlamaTutor", description: "Code", url: "https://llamatutor.together.ai/", codeUrl: "https://github.com/Nutlope/llamatutor" },
+        { name: "PDFtoChat", description: "Code", url: "https://www.pdftochat.com/", codeUrl: "https://github.com/nutlope/pdftochat" },
+        { name: "Napkins", description: "Code", url: "https://www.napkins.dev/", codeUrl: "https://github.com/nutlope/napkins" },
+        { name: "TwitterBio", description: "Code", url: "https://www.twitterbio.io/", codeUrl: "https://github.com/Nutlope/twitterbio" },
+        { name: "ExploreCareers", description: "Code", url: "https://www.explorecareers.io/", codeUrl: "https://github.com/Nutlope/ExploreCareers" },
+        { name: "NotesGPT", description: "Code", url: "https://usenotesgpt.com/", codeUrl: "https://github.com/nutlope/notesgpt" }
+      ]
     }
   ];
 
@@ -110,7 +130,18 @@ const ToolsSection = () => {
                       </a>
                     </td>
                     <td className="py-3 px-4 sm:px-6 text-xs sm:text-sm text-zinc-600 dark:text-zinc-400">
-                      {tool.description}
+                      {section.category === "Together AI Projects" ? (
+                        <a
+                          href={tool.codeUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                        >
+                          {tool.description}
+                        </a>
+                      ) : (
+                        tool.description
+                      )}
                     </td>
                   </tr>
                 ))}
