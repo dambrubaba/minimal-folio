@@ -5,7 +5,30 @@ import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "Damburudhar",
-  description: "Damburudhar Portfolio Website",
+  description: "Building SaaS, AI wrappers & open-source tools for the internet.",
+  openGraph: {
+    title: "Damburudhar",
+    description: "Building SaaS, AI wrappers & open-source tools for the internet.",
+    url: "https://your-website-url.com", // TODO: Replace with your actual URL
+    siteName: "Damburudhar",
+    images: [
+      {
+        url: "/og-default.png", // Assuming this is in the public folder
+        width: 1200,
+        height: 630,
+        alt: "Damburudhar Portfolio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Damburudhar",
+    description: "Building SaaS, AI wrappers & open-source tools for the internet.",
+    // creator: "@yourTwitterHandle", // Optional: Add your Twitter handle
+    images: ["/og-default.png"], // Must be an absolute URL in production
+  },
   icons: {
     icon: [
       {
