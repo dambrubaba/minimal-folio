@@ -9,7 +9,7 @@ export const metadata = {
   openGraph: {
     title: "Damburudhar",
     description: "Building SaaS, AI wrappers & open-source tools for the internet.",
-    url: "https://your-website-url.com", // TODO: Replace with your actual URL
+    url: "https://damburudhar.vercel.app", // TODO: Replace with your actual URL
     siteName: "Damburudhar",
     images: [
       {
